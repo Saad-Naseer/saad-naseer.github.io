@@ -94,3 +94,27 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center; /* Space between the left and right content */
+    align-items: center; /* Vertically center the items */
+}
+
+/* Style to change the color of the email link */
+.email-link {
+    color: red; /* Change this to the color you prefer */
+    text-decoration: none; /* Remove the underline if you don't want it */
+}
+
+.email-link:hover {
+    text-decoration: underline; /* Add underline on hover if needed */
+}
+
