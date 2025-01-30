@@ -47,14 +47,30 @@
 
         <section id="youtube" class="content-section hidden">
             <h2>My YouTube Videos</h2>
-            
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://youtu.be/nbKA-4Ljcu4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="videoSearch" placeholder="Search for a video..." onkeyup="filterVideos()">
+            </div>
+        
+            <div class="video-container" data-title="how to create your own custom machine learning dataset">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nbKA-4Ljcu4?si=d-PVEOtrbeKYfsDs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        
+            <div class="video-container" data-title="Transcription how to convert audio in any language into text">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l-96XYqGpzU?si=0XgJ_tYmkAJYxsVT"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         
             <!-- Add more video containers as needed -->
         
         </section>
+        
 
         <section id="cv" class="content-section hidden">
             <h2>CV</h2>

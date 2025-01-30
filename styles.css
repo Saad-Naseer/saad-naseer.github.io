@@ -57,9 +57,23 @@ nav ul li a {
 }
 
 /* Youtube Section */
-#youtube .video-container {
+/* Style the search bar */
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#videoSearch {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for video containers */
+.video-container {
     margin: 10px;
-    padding: 0;
     display: inline-block;
     width: 100%;
     max-width: 560px;
