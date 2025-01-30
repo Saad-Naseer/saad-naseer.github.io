@@ -97,6 +97,7 @@ nav ul li a {
     display: flex;
     justify-content: center; /* Space between the left and right content */
     align-items: center; /* Vertically center the items */
+    font-size: small;
 }
 
 /* Style to change the color of the email link */
