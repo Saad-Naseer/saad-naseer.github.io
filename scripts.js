@@ -1,11 +1,14 @@
 function showSection(sectionId) {
     // Hide all sections
-    const sections = document.querySelectorAll('.content-section');
-    sections.forEach(section => section.classList.add('hidden'));
+    document.querySelectorAll('.content').forEach(section => {
+        section.style.display = 'none';
+    });
 
     // Show the selected section
-    document.getElementById(sectionId).classList.remove('hidden');
+    document.getElementById(sectionId).style.display = 'block';
 }
 
-// Show "About" section by default
-document.addEventListener("DOMContentLoaded", () => showSection('about'));
+// Show "About" section by default on page load
+document.addEventListener("DOMContentLoaded", () => {
+    showSection('about');
+});

@@ -27,12 +27,9 @@ nav ul li a {
     cursor: pointer;
 }
 
-.content-section {
+section {
     padding: 50px;
-}
-
-.hidden {
-    display: none;
+    display: none; /* Hide sections by default */
 }
 
 footer {
@@ -42,4 +39,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Show only the active section */
+.active {
+    display: block;
 }
