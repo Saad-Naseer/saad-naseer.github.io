@@ -110,3 +110,129 @@ nav ul li a {
     text-decoration: underline; /* Add underline on hover if needed */
 }
 
+/* CV Styling */
+.cv-header {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 0.1fr;
+    background:#333;
+}
+
+.cv-pic{
+    display: flex;
+ 
+}
+.cv-pic img{
+    width: 200px;
+    height: 200px; 
+    
+    border: 3px solid #ccc;
+}
+.cv-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    color: #ccc;
+
+}
+.cv-info h1, .cv-info p {
+   margin: 1%;
+}
+
+.cv-social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the logos horizontally */
+    align-items: center;
+    gap: 2%;
+}
+
+.cv-social-media #youtube-icon {
+    width: 20px; /* Adjust size as needed */
+}
+.cv-social-media #linkedin-icon {
+    width: 20px; /* Adjust size as needed */
+}
+.cv-social-media #github-icon {
+    width: 20px; /* Adjust size as needed */
+}
+.social-link {
+    text-decoration: none;
+    color: #FF0000; /* YouTube red color */
+    font-weight: bold;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+#about h2 {
+    position: relative;
+    display: inline-block;
+}
+
+#about h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px; /* Thickness of underline */
+    background-color: #007BFF; /* Adjust color */
+    margin-top: 5px;
+}
+
+#experience h2 {
+    position: relative;
+    display: inline-block;
+}
+
+#experience h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px; /* Thickness of underline */
+    background-color: #007BFF; /* Adjust color */
+    margin-top: 5px;
+}
+
+#education h2 {
+    position: relative;
+    display: inline-block;
+}
+
+#education h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px; /* Thickness of underline */
+    background-color: #007BFF; /* Adjust color */
+    margin-top: 5px;
+}
+
+#skills h2 {
+    position: relative;
+    display: inline-block;
+}
+
+#skills h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px; /* Thickness of underline */
+    background-color: #007BFF; /* Adjust color */
+    margin-top: 5px;
+}
+
+#projects h2 {
+    position: relative;
+    display: inline-block;
+}
+
+#projects h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px; /* Thickness of underline */
+    background-color: #007BFF; /* Adjust color */
+    margin-top: 5px;
+}
