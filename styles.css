@@ -10,6 +10,11 @@ html, body {
 
 header{
     background: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure header stays above other content */
+  
 }
 
 header nav{
@@ -39,9 +44,11 @@ header nav ul a:hover{
 
 
 #content{
-    display: flex;
-    width: 100%;
-    height: 100%;
+    flex: 1;
+    overflow-y: auto; /* Allow scrolling inside main content */
+    margin-top: 50px;
+    margin-bottom: 135px;
+
 }
 .page{
     display: flex;
@@ -56,15 +63,15 @@ align-items: center;
 justify-content: top;
 width: 100%;
 height: 100%;
-margin-top: 10px;
+
 }
 
 .about_container img{
-    position: relative;
     border-radius: 100%;
     border: 3px solid #333;
     width: 200px;
     height: 200px;
+    margin-top: 10px;
 }
 
 .about_container h1{
@@ -105,19 +112,47 @@ margin-top: 10px;
     text-decoration: underline #333;
 }
    
-   
 
+.youtube_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    width: 100%;
+    height: 100%;
+    }
+.youtube_container h1{
+    text-decoration: underline #333;
+}
+.youtube_container input{
+    border: 1px solid #333;
+    width: 100%;
+    max-width: 500px;
+    padding:10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.youtube_videos {
+    display: flex;
+    flex-wrap: wrap; /* Allows videos to wrap onto new rows */
+    justify-content: center; /* Centers the videos horizontally */
+    gap: 10px;
+    margin-top: 10px;
+}
 
 .footer {
     background-color: #333;
     color: aliceblue;
-    padding: 0px;
     width: 100%;
     bottom: 0;
     display: flex;
     justify-content: center; /* Space between the left and right content */
     align-items: center; /* Vertically center the items */
     font-size: small;
+    position: fixed;
+    z-index: 1000; /* Ensure footer stays above other content */
+
+
 }
 /* Style to change the color of the email link */
 .email-link {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Saad Naseer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,8 +12,8 @@
             <ul>
                 <li><a href="#about" onclick="showPage('about')">About</a></li>
                 <li><a href="#projects" onclick="showPage('projects')">Projects</a></li>
-                <li><a href="#blogs" onclick="showPage('blog')">Blogs</a></li>
                 <li><a href="#youtube" onclick="showPage('youtube')">YouTube</a></li>
+                <li><a href="#blogs" onclick="showPage('blog')">Blogs</a></li>
                 <li><a href="#cv" onclick="showPage('cv')">CV</a></li>
             </ul>
         </nav>
@@ -57,9 +57,42 @@
             </div>
         </section>
         
+        <section id="youtube" class="page hidden">
+            <div class="youtube_container">
+                <h1>My Youtube Videos</h1>
+                <input type="text" id="videoSearch" placeholder="Search for a video..." onkeyup="filterVideos()">
+                
+                <!-- Container for all videos -->
+                <div class="youtube_videos">
+                    <div class="video_item" data-title="how to create your own custom machine learning dataset">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nbKA-4Ljcu4?si=d-PVEOtrbeKYfsDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
         
-         <section id="blogs" class="page hidden"> <h1>Blogs</h1><p>My latest blog posts.</p> </section>
-        <section id="youtube" class="page hidden"> <h1>YouTube</h1><p>My YouTube content.</p> </section>
+                    <div class="video_item" data-title="Transcription how to convert audio in any language into text">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/l-96XYqGpzU?si=0XgJ_tYmkAJYxsVT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+        
+                    <div class="video_item" data-title="install configure and run matplotlib in c++">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/43Wp_qxyXDM?si=fGPUjQPidxIEWaZb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+        
+                    <div class="video_item" data-title="install build and run boost in microsoft visual studio">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3elKoMMuJBA?si=wpFDMRryyaiONY9X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+        
+                    <div class="video_item" data-title="How to Completely Remove | Install | Upgrade Cuda, Cudnn & Pytorch in Windows For All GPU Types">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/krAUwYslS8E?si=OzDkjzCTPoDJV4yD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+        
+                    <div class="video_item" data-title="Full installation of Cuda and Cudnn with Pytorch for all GPU's in Linux">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EzI9vy9XmOQ?si=d2Gys9MtP0uqklM6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="blogs" class="page hidden"> <h1>Blogs</h1><p>My latest blog posts.</p> </section>
         <section id="cv" class="page hidden"> <h1>CV</h1><p>My resume.</p> </section>
     </div>
     
