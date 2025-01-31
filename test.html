@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="showPage('about')">About</a></li>
+                <li><a href="#projects" onclick="showPage('projects')">Projects</a></li>
+                <li><a href="#blogs" onclick="showPage('blog')">Blogs</a></li>
+                <li><a href="#youtube" onclick="showPage('youtube')">YouTube</a></li>
+                <li><a href="#cv" onclick="showPage('cv')">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="content">
+        <section id="about" class="page">
+            <div class="about_container">
+                <img src="images/me.jpg" alt="Saad Naseer">
+                <h1>About Me</h1>
+                <p>
+                    Hello! I am Saad Naseer, a robotics engineer and software developer.
+                    I specialize in real-time robotics systems, image processing, Computer Vision
+                    and AI-driven applications.
+                </p>
+                <p>
+                    With expertise in multiple programming languages (C++, Python, HTML, CSS, JavaScript)
+                    across various operating systems (Windows, Linux, macOS, ROS 2), I enjoy tackling complex
+                    technical challenges. In my free time, I create YouTube tutorials on software development for robotics.
+                </p>
+            </div>
+        </section>
+        
+        <section id="projects" class="page hidden">
+            <div class="projects_container">
+                <h1>Projects</h1>
+                <div>
+                    <h3>1. Enhancing Cross-Domain Performance of
+                        Panoptic One-Click Segmentation For Sugar Beet Fields:
+                        Towards an Efficient Annotation Tool
+                        <a href="docs/Master_Thesis.pdf" target="_blank">[pdf]</a>
+                    </h3>
+            
+                    <h3>2. Transcription App: Convert Voice into Text
+                        <a href="https://github.com/Saad-Naseer/MediaAI-dev" target="_blank">[pdf]</a>
+                        <a href="https://github.com/Saad-Naseer/MediaAI-dev" target="_blank">[code]</a>
+                        <a href="https://mediaai.netlify.app/" target="_blank">[demo]</a>
+                        <a href="https://github.com/Saad-Naseer/MediaAI/releases/tag/v0.0" target="_blank">[win.exe]</a>
+                    </h3>
+                </div>
+            </div>
+        </section>
+        
+        
+         <section id="blogs" class="page hidden"> <h1>Blogs</h1><p>My latest blog posts.</p> </section>
+        <section id="youtube" class="page hidden"> <h1>YouTube</h1><p>My YouTube content.</p> </section>
+        <section id="cv" class="page hidden"> <h1>CV</h1><p>My resume.</p> </section>
+    </div>
+    
+    <footer class="footer">
+        <div>
+            <p><strong>Location:</strong> 50226 Frechen, Germany</p>
+            <p><strong>Phone:</strong> +49-1781493767</p>
+            <p><strong>Email:</strong> <a href="mailto:saadrocky46@gmail.com" class="email-link">saadrocky46@gmail.com</a></p>
+            <p>&copy; 2025 Saad Naseer. All rights reserved.</p>
+        </div>
+</footer>
+    <script src="test.js"></script>
+</body>
+</html>
