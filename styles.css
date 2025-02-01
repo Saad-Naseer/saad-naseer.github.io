@@ -120,11 +120,15 @@ height: 100%;
     align-items: center;
     justify-content: top;
     width: 100%;
+    gap:1px;
 }
-.youtube_badges {
-    position: relative;
-    top: -10px; /* Moves it up without margin issues */
+.youtube_badges{
+   display: flex;
+   gap: 5px;   
+   margin-top: -15px; /* Adjust as needed */
+ 
 }
+
 
 .youtube_container h1{
     text-decoration: underline #333;
