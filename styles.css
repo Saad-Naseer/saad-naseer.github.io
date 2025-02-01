@@ -120,7 +120,6 @@ height: 100%;
     align-items: center;
     justify-content: top;
     width: 100%;
-    gap:1px;
 }
 .youtube_badges{
    display: flex;
