@@ -140,6 +140,129 @@ height: 100%;
     margin-top: 10px;
 }
 
+/**************Blogs*****************/
+.blogs_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    width: 100%;
+    height: 100%;
+    }
+.blogs_container h1{
+    text-decoration: underline #333;
+}
+/**************End Blogs*****************/
+/**************CV*****************/
+.cv_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    width: 100%;
+    height: 100%;
+    }
+.cv_container h1{
+    text-decoration: underline #333;
+}
+.cv_head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    max-height: 130px;
+    gap: 150px;
+    background: #333;
+}
+.cv_head img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    max-width: 130px;
+    max-height: 130px;
+    margin-left: 50px;
+}
+.cv_head .cv_head_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #999191;
+}
+.cv_head .cv_head_info h1{
+    margin: 0px;
+
+}
+.cv_head .cv_head_info p{
+    margin: 0px;
+}
+.cv_head .cv_head_info .cv_social_media{
+    display: flex;
+    flex-direction: row;
+ 
+    gap:5px;
+}
+.cv_head .cv_head_info .cv_social_media img{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+.cv_head .cv_head_info .cv_social_media a{
+    color: #999191;
+    text-decoration: none;
+}
+.cv_head .cv_head_info .cv_social_media a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+fieldset{
+    display: flex;
+    border: 2px solid #999191;
+    width: 100%;
+    height: 100%;
+    max-width: 875px;
+    max-height: fit-content;
+    font-size: large;
+    gap: 0px;
+}
+fieldset p{
+    margin: 0; /* Remove default margin */
+
+}
+.cv_experience{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+.cv_experience .cv_experience_head {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between; /* Push first item to left & second item to right */
+}
+.cv_education{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+.cv_education .cv_education_head {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between; /* Push first item to left & second item to right */
+}
+.cv_projects{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+/**************End CV*****************/
+
 .footer {
     background-color: #333;
     color: aliceblue;

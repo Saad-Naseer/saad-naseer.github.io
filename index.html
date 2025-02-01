@@ -15,7 +15,7 @@
                 <li><a href="#about" onclick="showPage('about')">About</a></li>
                 <li><a href="#projects" onclick="showPage('projects')">Projects</a></li>
                 <li><a href="#youtube" onclick="showPage('youtube')">YouTube</a></li>
-                <li><a href="#blogs" onclick="showPage('blog')">Blogs</a></li>
+                <li><a href="#blogs" onclick="showPage('blogs')">Blogs</a></li>
                 <li><a href="#cv" onclick="showPage('cv')">CV</a></li>
             </ul>
         </nav>
@@ -63,7 +63,7 @@
             <div class="youtube_container">
                 <h1>My Youtube Videos</h1>
                 <input type="text" id="videoSearch" placeholder="Search for a video..." onkeyup="filterVideos()">
-                
+
                 
                 <!-- Container for all videos -->
                 <div class="youtube_videos">
@@ -95,8 +95,171 @@
         </section>
         
         
-        <section id="blogs" class="page hidden"> <h1>Blogs</h1><p>My latest blog posts.</p> </section>
-        <section id="cv" class="page hidden"> <h1>CV</h1><p>My resume.</p> </section>
+        <section id="blogs" class="page hidden">
+            <div class="blogs_container">
+                <h1>Blogs</h1>
+                <p>My latest blog posts.</p>
+            </div>
+        </section>
+        
+        <section id="cv" class="page hidden">
+            <div class="cv_container">
+                <h1>CV</h1>
+                <div class="cv_head">
+                    <img src="images/me.jpg" width="100%" height="100%">
+                    <div class="cv_head_info">
+                        <h1>Saad Naseer</h1>
+                        <p><strong>Software Developer</strong></p>
+                        <p><strong>Email:</strong> saadrocky46@gmail.com</p>
+                        <p><strong>Phone:</strong> +49 1781493767</p>
+                        <p><strong>Location:</strong> 50226 Frechen, Germany</p>
+                        <div class = "cv_social_media">
+                            <img src="icons/youtube.png" id="youtube-icon" alt="youtube">
+                            <a href="https://www.youtube.com/@roboticsworkshop" target="_blank" class="social-link">YouTube</a>
+    
+                            <img src="icons/github.png" id="github-icon" alt="github">
+                            <a href="https://github.com/Saad-Naseer" target="_blank" class="social-link">Github</a>
+    
+                            <img src="icons/linkedin.png" id="linkedin-icon" alt="linkedin">
+                            <a href="https://www.linkedin.com/in/saad-naseer-2989b41a6/" target="_blank" class="social-link">Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend><strong>Summary</strong></legend>
+                    <p>
+                        Hello! I am Saad Naseer, a robotics engineer and software developer.
+                        I specialize in real-time robotics systems, image processing, Computer Vision
+                        and AI-driven applications.
+
+                        With expertise in multiple programming languages (C++, Python, HTML, CSS, JavaScript)
+                        across various operating systems (Windows, Linux, macOS, ROS 2), I enjoy tackling
+                        complex technical challenges. In my free time, I create YouTube tutorials on software
+                        development for robotics.
+                    </p>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Experience</strong></legend>
+                    <div class="cv_experience">
+                        <div class="cv_experience_head">
+                            <p><strong>Software Developer</strong><p>
+                            <p><strong><em>December 2020 - Present</em></strong></p>
+                        </div>
+                        <p>Robidia GmbH</p>
+                        <ul>
+                            <li>Development of frontend and backend software for real-time robotics systems.</li>
+                            <li>Participation in software design discussions and making important decisions regarding the system architecture.</li>
+                            <li>Selection of the right hardware components, such as microcontrollers and communication devices, based on the
+                                specific needs of the project.</li>
+                            <li>Integration of software and hardware components.</li>
+                            <li>Leading the testing and validation of both software and hardware at every stage of development to ensure the
+                                system performs effectively.</li>
+                            <li>Documentation of code and creating user manuals.</li>
+                            <li>Presentation of our work at conventions such as IBC and Digital Demo Day.</li>
+                        </ul>
+                        <div class="cv_experience_head">
+                            <p><strong>Robotics Workshop</strong></p>
+                            <p><strong><em>Joined Feb 18, 2017 - Present</em></strong></p>
+                        </div>
+                        <p>Youtube</p>
+                        <ul>
+                            <li>Give lectures on robotics and real-time communication systems.</li>
+                            <li>Explain and implement algorithms using different programming languages across various operating systems.</li>
+                            <li>Teach the use of software and tools for software development.</li>
+                            <li>Produce and edit educational videos.</li>
+                            <li>Respond to queries and questions from viewers in the comments to provide additional support and clarification.</li>
+                        </ul>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Education</strong></legend>
+                    <div class="cv_education">
+                        <div class="cv_education_head">
+                            <p><strong>M.Sc in Mobile Sensing and Robotics</strong><p>
+                            <p><strong><em>2024</em></strong></p>
+                        </div>
+                        <p>University of Bonn, Germany</p>
+                        <ul>
+                            <li> <strong>Relevant Courses:</strong> Modern C++ For Computer Vision,
+                                Sensor and State Estimation, Application of ROS,
+                                Calibration and Evaluation of Multi Sensor System,
+                                Point Cloud Processing, Statistics & Adjustment Theory,
+                                Numerics in C++.
+                            </li>
+                            <li> <strong>Extra Courses:</strong>
+                                Foundation of Graphics, Big Data.
+                            </li>
+                        </ul>   
+                        <div class="cv_education_head">
+                            <p><strong>BE in Mechatronics Engineering</strong><p>
+                            <p><strong><em>2017</em></strong></p>
+                        </div>
+                        <p>Air University, Islamabad</p>
+
+                        <ul>
+                            <li><strong>Relevant Courses:</strong> Electronics (DLD, Embedded Systems, Microcontrollers,
+                                Power Electronics, Control Systems), Mechanics (Statics, Dynamics, Mechanical Vibrations,
+                                Fluid Mechanics, Material Science), Computer Science (C++, OOP),
+                                Mathematics (Calculus, Numerics, Applied Mathematics).</li>
+                            <li><strong>Awards:</strong> 1st prize in Maze Solving Competition.</li>
+                        </ul>  
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Skills</strong></legend>
+                    <div>
+                        <p><strong>Languages:</strong> English, German, Urdu</p>
+                        <p><strong>Programming Languages:</strong> C++, Python, Html, CSS, JS, Shell</p>
+                        <p><strong>Libraries and Framework:</strong> Pytorch, Pandas, OpenCV, CUDA, Matplotlib, OpenCV, Pyqt, Sockets, Sockets, Flask, ROS 2</p>
+                        <p><strong>Softwares:</strong>VS Code, Visual Studio 2022, Jupyter, Matlab, Qt, Copellia Sim, Cloud Compare, Proteus,
+                                                      Express PCB, SolidWorks</p>
+                        <p><strong>Deployment:</strong> Windows, Linux, Docker, Cloud</p>
+
+                    </div>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Projects</strong></legend>
+                    <div class="cv_projects">
+                        <p><strong>
+                            Enahncing Cross Domain Performance of Panoptic One-Click Segmentation: A step towards an
+                            efficient annotation tool
+                        </strong></p>
+                        <ul>
+                            <li><strong>Problem:</strong>Deep learning models depend on large annotated datasets.
+                                 The Panoptic One-Click Segmentation model that generates pseudo labels had limited performance across domains.</li>
+                            <li><strong>Solution:</strong> Added pre-segmentation information as an extra channel to panoptic one-click model.
+                            </li>
+                            <li><strong>Results:</strong> Accuracy across domain improved by 5.6% as comapred to baseline. 
+                            </li>
+                        </ul>  
+                        <p><strong>
+                            Bag of Visual Words
+                        </strong></p>
+                        <ul>
+                            <li>Implemented Place Recognition using the Bag of Visual Words algorithm.</li>
+                            <li>Developed in C++14 with over 90% test coverage.</li>
+                        </ul>  
+                </div>
+                </fieldset>
+
+                <!--fieldset>
+                    <legend><strong>Extras</strong></legend>
+                    <p></p>
+                    
+                </fieldset-->
+
+            </div>
+        </section>
+   
+   
     </div>
     
     <footer class="footer">
