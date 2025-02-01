@@ -249,12 +249,44 @@
                             </li>
                         </ul>  
                         <p><strong>
+                            Fusion of Camera and 2D-Lidar
+                       </strong></p>
+                        <ul>
+                            <li>Implemented sensor fusion by determining the intrinsic and extrinsic parameters
+                                using a checkerboard pattern, applying least squares optimization for accurate alignment.</li>
+                            <li>Used MATLAB for intrinsic and extrinsic calibration and achieved an overall mean reprojection error of 0.9 pixels.</li>
+                        </ul>  
+                        <p><strong>
+                            Calibration and Evaluation of Multi-Sensor System
+                       </strong></p>
+                        <ul>
+                            <li>Implemented sensor fusion by determining the transformation parameters between 2D-Lidar
+                                and IMU using a refernce planes by applying Gauss-Helmert Model.</li>
+                            <li>Used CoppeliaSim for simulation and implemented in Python, achieving
+                                &lt;0.01° angular accuracy and ~5 mm translation accuracy, except 30.8 mm on the X-axis.</li>
+                        </ul>  
+                        <p><strong>
                             Bag of Visual Words
                         </strong></p>
                         <ul>
                             <li>Implemented Place Recognition using the Bag of Visual Words algorithm.</li>
                             <li>Developed in C++14 with over 90% test coverage.</li>
                         </ul>  
+                        <p><strong>
+                            Object Tracking Using Kalman Filter
+                        </strong></p>
+                        <ul>
+                            <li>Implemented object tracking on detection using the Constant Velocity and Constant Acceleration models.</li>
+                            <li>Written in C++ and ROS 2</li>
+                        </ul>  
+                        <p><strong>
+                            Visual Odometry Using Scan Matching 
+                        </strong></p>
+                        <ul>
+                            <li>Implemented scan matching by ICP (point to point) on data collected from 2D-Liadr on Kuka Robot</li>
+                            <li>Written in C++ and ROS 2</li>
+                        </ul>  
+                        
                 </div>
                 </fieldset>
 
